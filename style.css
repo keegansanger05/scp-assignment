@@ -1,0 +1,201 @@
+body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+footer {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 90%;
+    text-align: center;
+  }
+  
+h1 {
+    color: white;
+    text-align: center;
+  }
+  
+p {
+    font-family: verdana;
+  }
+  
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 35px;
+}
+.top img {
+    max-width: 100px;
+    height: auto;
+}
+.container {
+    padding: 10px;
+    position: relative;
+    margin: auto;
+    box-shadow: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card {
+    height: 50vh;
+    width: 90%;
+    padding: 2rem 1rem;
+    margin: auto;
+    background-color: #333;
+    box-shadow: 0 2px 5px white;
+    border-radius: 5px;
+    text-align: left;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.8rem;
+}
+.card > img {
+    width: 50%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.left-image {
+    width: 20%;
+}
+
+.right-text {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: white;
+    width: 47%;
+}
+
+.container2 {
+    overflow: auto;
+    width: 100%;
+}
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+body {font-family: Arial, sans-serif;}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.slides {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+     margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+text {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: justify;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.square {
+    text-align: left;
+    height: 70%;
+    width: 70%;
+    background-color: #333;
+    margin: auto;
+    color: white;
+    font-family: Arial, sans-serif;
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.img {
+    text-align: center;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
