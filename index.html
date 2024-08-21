@@ -24,79 +24,100 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="card">
-            <img src="B images/800px-SCP002.jpg">
-            <p>
-            SCP-002, also known as "The Living Room," is an anomalous object classified as Euclid by the SCP Foundation. 
-            It resembles a large, fleshy tumor with a hollow, interior space that mimics the appearance of a living room. 
-            The interior is furnished with a variety of objects, including furniture and decorations, all of which appear 
-            to be made from biological matter similar to human tissue. When individuals come into close proximity 
-            with SCP-002, they may feel an inexplicable compulsion to enter the structure. Once inside, they are absorbed 
-            and their body parts are converted into new furniture or decor, seamlessly blending into the room's existing 
-            layout. Due to its highly dangerous nature, SCP-002 is kept under strict containment, and access is limited 
-            to authorized personnel only.</p>
-            </div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-    <br>
-    <div class="container">
-        <div class="card">
-            <img src="B images/scp-003.jpg" height="80%" width="500px">
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+    <div class="slideshow-container">
+    
+        <div class="slides fade">
+            <div class="imgCenter"><img src="B images/carousel 1.jpg" width="100%"></div>
+            <div class="text">SCP 339</div>
+        </div>
+    
+        <div class="slides fade">
+            <div class="imgCenter"><img src="B images/carousel 2.jpg" width="100%"></div>
+            <div class="text">SCP 996</div>
+        </div>
+    
+        <div class="slides fade">
+            <div class="imgCenter"><img src="B images/carousel 3.jpg" width="100%"></div>
+            <div class="text">SCP don't know</div>
+        </div>
+        
+    
+    </div>
+
+    <br><br>
+
+    <div class="boxes1">
+        <div id="monters">
+            <h3>Russian Sleep Experiment</h3>
+            <img src="B images/card 1.jpg" class="rounded" width="80%" height="80%">
             <p>
-            SCP-003, also known as "Biological Motherboard," is a highly anomalous object resembling a complex circuit 
-            board composed of biological tissue. Discovered in a hidden underground chamber, SCP-003 exhibits the ability
-            to interface with electronic devices and systems, manipulating them in unforeseen ways. It operates through
-            a form of biological circuitry that integrates seamlessly with technology, allowing it to exert control over
-            connected devices. The SCP Foundation has classified SCP-003 as Euclid due to its unpredictable effects 
-            and the potential security risks posed by its interaction with electronic systems. Containment protocols
-            are focused on preventing unauthorized access and ensuring the object remains isolated from external 
-            technology.
+            Russian Sleep Experiment: The Russian Sleep Experiment is a creepypasta about a secret Soviet experiment 
+            where prisoners were kept awake for 15 days. As sleep deprivation took its toll, the subjects became violent 
+            and deranged. 
             </p>
-    </div>
-    <br>
-    <div class="container">
-        <div class="card">
-            <img src="B images/SCP004_door.jpg" height="100%" width="500px">
+        </div>
+        <div id="monters">
+            <h3>Plague Doctor</h3>
+            <img src="B images/card 2.jpg" class="rounded" width="80%" height="80%">
             <p>
-                SCP-004, known as "The Door," is an anomalous object consisting of twelve rusted keys and a corresponding 
-                door with a lock. The keys and door, when used together, can unlock a variety of unexpected and often 
-                dangerous phenomena. Each key opens the door to a different, highly variable location or condition, some 
-                of which can be extremely hazardous. The effects range from seemingly mundane rooms to locations with lethal
-                 environmental hazards or anomalous entities. Due to the unpredictable nature of the keys and their 
-                 potentially lethal outcomes, SCP-004 is classified as Euclid, and strict containment procedures are enforced
-                  to manage and study its unpredictable effects safely.
-            <p>
-    </div>
-    <br>
-    <div class="container">
-        <div class="card">
-            <img src="B images/SCP-005.jpg" height="260px" width="500px">
-            <p>
-            SCP-005, also known as "The Skeleton Key," is an anomalous key that possesses the ability to unlock any lock, 
-            regardless of complexity or security measures. It appears as a standard antique key, but its properties allow 
-            it to bypass all forms of physical and electronic locking mechanisms. SCP-005's effects are not limited to 
-            conventional locks; it can also unlock previously inaccessible or anomalous barriers. Due to its versatile 
-            and potentially dangerous capabilities, SCP-005 is classified as Euclid and is kept under strict security to 
-            prevent misuse. Its containment includes rigorous controls to ensure that it remains secured and its applications
-            are carefully monitored.
+            Plague Doctor (SCP-049): SCP-049, known as the Plague Doctor, is a humanoid entity in the SCP Foundation that 
+            resembles a 17th-century plague doctor. It believes it is curing a disease called the "Pestilence," but its 
+            methods involve killing and reanimating victims.
             </p>
-    </div>
-    <br>
-    <div class="container">
-        <div class="card">
-            <img src="B images/SCP-006.webp" height="225px" width="500px">
+        </div>
+        <div id="monters">
+            <h3>Sirenhead</h3>
+            <img src="B images/card 3.png" class="rounded" width="80%" height="80%">
             <p>
-            SCP-006, known as "The Fountain of Youth," is an anomalous spring located in a remote and uninhabited region. 
-            The water from SCP-006 has rejuvenating properties that reverse aging and heal injuries, effectively granting 
-            its drinkers extended longevity and vitality. However, the effects are not without side effects; prolonged 
-            exposure can lead to severe psychological and physiological changes, including erratic behavior and physical 
-            distortions. The fountain's water also has unpredictable effects on individuals with pre-existing conditions 
-            or genetic anomalies. Due to its potent and potentially hazardous properties, SCP-006 is classified as Euclid, 
-            and its location is kept confidential to prevent unauthorized access and exploitation.
+            Sirenhead: Sirenhead is a towering, monstrous creature with sirens for a head, capable of emitting distorted 
+            sounds and mimicking voices. Created by artist Trevor Henderson, Sirenhead is a modern horror icon known for 
+            its eerie and unsettling presence.
             </p>
+        </div>
     </div>
     
     
+    
+
+
 
     <footer>
         @copyright, Keegan Sanger
